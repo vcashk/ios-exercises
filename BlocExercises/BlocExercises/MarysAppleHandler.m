@@ -13,7 +13,25 @@
 - (NSString *) itemMaryCanPurchaseForDollars:(NSInteger)dollars {
     NSString *itemToReturn;
 
-    /* WORK HERE */
+    switch (dollars) {
+        case 4:
+            itemToReturn = @"get out of my store";
+            break;
+        case 5:
+            itemToReturn =  @"have some gum";
+            break;
+        case 6:
+            itemToReturn =  @"have an apple";
+            break;
+        case 1000:
+            itemToReturn = @"have an Apple computer";
+            break;
+        case 1000000000:
+            itemToReturn = @"have The Big Apple";
+            break;
+        default:
+            break;
+    }
     
     NSLog(@"For $%ld, Mary can: %@", (long)dollars, itemToReturn);
     return itemToReturn;

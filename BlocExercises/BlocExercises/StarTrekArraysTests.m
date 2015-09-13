@@ -52,8 +52,11 @@
 
 - (void) testThatArraysAreTurnedIntoStringsProperly {
     NSArray *testArray = @[self.worf, self.picard, self.crusher];
+    
     NSString *expectedString = [NSString stringWithFormat:@"%@;%@;%@", self.worf, self.picard, self.crusher];
     NSString *actualString = [self.starTrekArrays stringOfStarTrekCharactersFromArray:testArray];
+ 
+    
     XCTAssertEqualObjects(expectedString, actualString, @"The returned string was different than expected.");
 
     testArray = @[self.picard, self.crusher, self.worf];
@@ -77,7 +80,7 @@
 - (void) testThatCharacterArrayDetectsWorfIfPresent {
     NSArray *inputArray = @[self.picard, self.crusher, self.worf];
     BOOL worfIsPresent = [self.starTrekArrays characterArrayContainsWorf:inputArray];
-    XCTAssertTrue(worfIsPresent, @"Worf was present, but wasn't detected correctly.");
+       XCTAssertTrue(worfIsPresent, @"Worf was present, but wasn't detected correctly.");
 }
 
 - (void) testThatCharacterArrayDoesNotDetectWorfIfNotPresent {

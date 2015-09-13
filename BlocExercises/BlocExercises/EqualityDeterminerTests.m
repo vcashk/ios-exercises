@@ -48,6 +48,7 @@
     NSNumber *sixNumber = [NSNumber numberWithFloat:6];
     NSNumber *identicalSixNumber = [NSNumber numberWithInt:6];
     BOOL numberEquality = [self.determiner number:sixNumber isTheSameAsNumber:identicalSixNumber];
+   
     XCTAssertTrue(numberEquality, @"Six should be equal to six.");
 }
 
