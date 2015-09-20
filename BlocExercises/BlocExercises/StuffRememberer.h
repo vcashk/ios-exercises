@@ -14,7 +14,7 @@
 @property (nonatomic) NSMutableArray* arrayToRemember;
 @property (nonatomic) NSMutableArray* arrayToCopy;
 
-@property (nonatomic) CGFloat* floatToRemember;
+@property (nonatomic) CGFloat floatToRemember;
 
 
 /*
