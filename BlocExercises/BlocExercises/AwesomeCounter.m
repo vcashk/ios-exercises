@@ -40,8 +40,8 @@ NSString *resultString = @"";
     }
     
     if (number == 9 && otherNumber == 4) {
-        for (int val = otherNumber; val <= number; val++) {
-            NSLog(@"the value is: >>>:%d",val);
+        for (NSInteger val = otherNumber; val <= number; val++) {
+            NSLog(@"the value is: >>>:%ld",(long)val);
             NSString *valstr = [@(val) stringValue];
             strVal3 = [strVal3 stringByAppendingString:valstr];
         }

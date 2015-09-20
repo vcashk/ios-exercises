@@ -18,7 +18,7 @@
 
 - (NSString *) stringOfStarTrekCharactersFromArray:(NSArray *)characterArray {
     /* WORK HERE */
-    NSArray *newArray = [[characterArray mutableCopy] componentsJoinedByString:@";"] ;
+    NSString *newArray = [[characterArray mutableCopy] componentsJoinedByString:@";"] ;
     NSString *strArray = [newArray description];
     
     return strArray;
@@ -32,7 +32,7 @@
 
 - (BOOL) characterArrayContainsWorf:(NSArray *)characterArray {
     /* WORK HERE */
-    BOOL *isWorfThere = FALSE;
+    BOOL isWorfThere = FALSE;
     for (NSString *tempObject in characterArray) {
         NSLog(@"Single element: %@", tempObject);
          NSString *string = tempObject;

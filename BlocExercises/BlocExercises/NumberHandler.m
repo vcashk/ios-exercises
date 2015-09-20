@@ -24,7 +24,7 @@
     NSMutableArray *numArray = [NSMutableArray array];
     
     for (NSInteger i = number; i <= otherNumber; i++) {
-        [numArray addObject:[NSNumber numberWithInt:i]];
+        [numArray addObject:[NSNumber numberWithInt:(int)i]];
     }
    
     return numArray;
